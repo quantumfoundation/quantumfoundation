@@ -1,0 +1,15 @@
+.coins-container {
+    width: 50%;
+}
+
+.headerTextImage {
+    display: inline-block;
+    margin-right: 6px;
+    width: 80px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffe5b4;
+}
