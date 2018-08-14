@@ -1,11 +1,11 @@
 <div class="coins-container">
   <h3><img class="headerTextImage" [src]="initialImageUrl" alt="Quantum Foundation Sign In" />Quantum Foundation Coin &lt;~ Quant</h3>
-  <app-coin [coinValue]="'coin10'" [coinReverse]="'qtum'" [subtitle]="'Quantum Foundation Quantum Qtum'"></app-coin>
-  <app-coin [coinValue]="'coin2'" [coinReverse]="'eth'" [subtitle]="'Quantum Foundation Ethereum ETH'"></app-coin>
+  <app-coin [coinObverse]="coinObverse(10)" [coinReverse]="getRoundBackground(qtumReverseUrl)" [subtitle]="'Quantum Foundation Quantum Qtum'"></app-coin>
+  <app-coin [coinObverse]="coinObverse(2)" [coinReverse]="getRoundBackground(ethReverseUrl)" [subtitle]="'Quantum Foundation Ethereum ETH'"></app-coin>
   <h3><img class="headerTextImage" [src]="initialImageUrl" alt="Quantum Foundation Sign In" />Quantum Foundation Coin &lt;~ Quantina</h3>
-  <app-coin [coinValue]="'coin5'" [coinReverse]="'qtum'" [subtitle]="'Quantum Foundation Quantum Qtum'"></app-coin>
-  <app-coin [coinValue]="'coin1'" [coinReverse]="'eth'" [subtitle]="'Quantum Foundation Ethereum ETH'"></app-coin>
+  <app-coin [coinObverse]="coinObverse(5)" [coinReverse]="getRoundBackground(qtumReverseUrl)" [subtitle]="'Quantum Foundation Quantum Qtum'"></app-coin>
+  <app-coin [coinObverse]="coinObverse(1)" [coinReverse]="getRoundBackground(ethReverseUrl)" [subtitle]="'Quantum Foundation Ethereum ETH'"></app-coin>
   <h3><img class="headerTextImage" [src]="initialImageUrl" alt="Quantum Foundation Sign In" />Quantum Foundation Coin &lt;~ Quantinec</h3>
-  <app-coin [coinValue]="'coinhalf'" [coinReverse]="'qtum'" [subtitle]="'Quantum Foundation Quantum Qtum'"></app-coin>
-  <app-coin [coinValue]="'coinfifth'" [coinReverse]="'eth'" [subtitle]="'Quantum Foundation Ethereum ETH'"></app-coin>
+  <app-coin [coinObverse]="coinObverse('.5')" [coinReverse]="getRoundBackground(qtumReverseUrl)" [subtitle]="'Quantum Foundation Quantum Qtum'"></app-coin>
+  <app-coin [coinObverse]="coinObverse('.2')" [coinReverse]="getRoundBackground(ethReverseUrl)" [subtitle]="'Quantum Foundation Ethereum ETH'"></app-coin>
 </div>

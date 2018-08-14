@@ -9,6 +9,7 @@ import { YoutubeComponent } from './components/youtube/youtube.component';
 
 import { HttpModule } from '@angular/http';
 import { EmbedVideo } from 'ngx-embed-video';
+import { HolotechComponent } from './components/holotech/holotech.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { EmbedVideo } from 'ngx-embed-video';
     AppComponent,
     CoinComponent,
     CoinsComponent,
-    YoutubeComponent
+    YoutubeComponent,
+    HolotechComponent
   ],
   imports: [
     BrowserModule,

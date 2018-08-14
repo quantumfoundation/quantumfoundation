@@ -19,11 +19,7 @@ End of comment */
     } 
   }
   
-  .coinwrapper {
-      float: left;
-      width: 50%;
-      text-align: center;
-  }
+
   
   .coincontainer {
       position: relative;
@@ -75,7 +71,7 @@ End of comment */
     /* hidden by default, prevent blinking and other weird rendering glitchs */
   }
   .face {
-    background-size: 100% 100%!important;
+    background-size: 100% 100%;
     background-position: center;
   }
   .face-wrapper .face {
@@ -206,10 +202,10 @@ End of comment */
     background:url(http://quantumfoundation.eu/wp-content/uploads/2017/06/FCTcoins_.2_512.png);
   }
   .coincontainer.qtum .cyl-2 .bm {
-    background:url(http://quantumfoundation.eu/wp-content/uploads/2018/08/qtum_coin_rotated.png);
+    background:url();
   }
   .coincontainer.eth .cyl-2 .bm {
-    background:url(http://quantumfoundation.eu/wp-content/uploads/2018/08/eth_double_flipped.png);
+    background:url();
   }
   .cyl-2 .side {
     background:url(http://quantumfoundation.eu/wp-content/uploads/2018/08/coin_edge90.png);

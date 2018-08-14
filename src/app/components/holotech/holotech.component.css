@@ -1,0 +1,16 @@
+app-coin {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin-top: -106px;
+}
+
+app-coin:first-child, app-coin:nth-child(6)   {
+    margin-left: 16.5%;
+}
+
+.holoMandalaCaption {
+    float: left;
+    text-align: center;
+    font-size: 18px;
+}

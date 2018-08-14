@@ -7,14 +7,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CoinComponent implements OnInit {
 
-  @Input() coinValue: string;
+  @Input() coinObverse: string;
   @Input() coinReverse: string;
   @Input() subtitle: string;
 
   constructor() { }
 
   ngOnInit() {
-    console.log('coinValue', this.coinValue);
   }
 
 }

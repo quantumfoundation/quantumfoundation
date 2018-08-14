@@ -1,10 +1,9 @@
-<div class="coinwrapper">
-  <div class="coincontainer" [ngClass]="[coinValue, coinReverse]">
+  <div class="coincontainer" >
     <div id="tridiv">
       <div class="scene">
         <div class="shape cylinder-2 cyl-2">
-          <div class="face bm"><div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.1);"></div></div>
-          <div class="face tp"><div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.1);"></div></div>
+          <div class="face bm" [ngStyle]="coinReverse"><div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.1);"></div></div>
+          <div class="face tp" [ngStyle]="coinObverse"><div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.1);"></div></div>
           <div class="face side s0"><div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.1);"></div></div>
           <div class="face side s1"><div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.125);"></div></div>
           <div class="face side s2"><div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.16);"></div></div>
@@ -29,5 +28,4 @@
       </div>
     </div>
   </div>
-  {{subtitle}}
-</div>
+  <!-- {{subtitle}} -->
