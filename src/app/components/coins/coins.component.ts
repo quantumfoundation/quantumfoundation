@@ -24,4 +24,8 @@ export class CoinsComponent implements OnInit {
     return { 'background-image': 'url(http://quantumfoundation.eu/wp-content/uploads/2017/06/FCTcoins_' + coinValue + '_512.png' };
   }
 
+  selectHex() {
+    
+  }
+
 }
