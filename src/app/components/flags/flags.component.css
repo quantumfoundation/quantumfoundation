@@ -1,0 +1,8 @@
+.country_flags {
+  margin: 10px 0;
+}
+
+.country_flags .flag {
+    margin-right: 10px;
+    cursor: pointer;
+}

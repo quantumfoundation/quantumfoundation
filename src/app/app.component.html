@@ -9,7 +9,13 @@
 
 </div>
 <div class="rightPanel">
+  <app-flags></app-flags>
   <h2>Fotoquantum Foundation</h2>
+
+  <div [innerHTML]="'ABSTRACT.TITLE' | translate" class="abstact_title"></div>
+  <div [innerHTML]="'ABSTRACT.CONTENT' | translate" class="abstact_content"></div>
+  <div [innerHTML]="'ABSTRACT.REFERENCES' | translate"></div>
+  <div [innerHTML]="'ABSTRACT.KEYWORDS' | translate"></div>
 
   Fotoquantum Foundation in collaboration with Holopedia project has created a concept for Holo Quantum, a holographic model for
   healthy
