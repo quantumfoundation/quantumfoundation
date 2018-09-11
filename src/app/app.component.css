@@ -4,14 +4,19 @@ h2 {
 
 .leftPanel {
     float:left;
-    width: 732px;
-    margin: 120px 30px;
+    width: 50%;
+}
+
+.leftPanel img {
+  width: 100%;
 }
 
 .rightPanel {
     float:right;
-    width:calc(100% - 800px);
+    width: 48%;
     font-size: 24px;
+    text-align: justify;
+    padding: 1%;
 }
 
 .abstact_title {

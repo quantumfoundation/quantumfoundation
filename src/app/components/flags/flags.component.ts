@@ -8,7 +8,7 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class FlagsComponent implements OnInit {
 
-  countryCodes: Array<string> = ['en', 'es', 'dk', 'de', 'cn', 'kr'];
+  countryCodes: Array<string> = ['cn', 'kr', 'gb', 'es', 'dk', 'de'];
 
   constructor(
     private translate: TranslateService

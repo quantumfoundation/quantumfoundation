@@ -9,8 +9,14 @@ app-coin:first-child, app-coin:nth-child(6)   {
     margin-left: 16.5%;
 }
 
+.holoMandala {
+  width: 732px;
+  margin: 108px auto;
+}
+
 .holoMandalaCaption {
-    float: left;
-    text-align: center;
-    font-size: 18px;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
 }
