@@ -1,1 +1,9 @@
-<app-holotech></app-holotech>
+
+<div class="holoMandala">
+    <app-coin *ngFor="let coin of coins" [coinObverse]="getHexSide(coin.ObverseSettings, '91%')" [coinReverse]="getHexSide(coin.ReverseSettings)" 
+    [subtitle]="'Quantum Foundation Quantum Qtum'" [obverseText]="coin.ObverseText" (click)="selectHex(obverse, $event)"></app-coin>
+  </div>
+  <div class="holoMandalaCaption">
+
+  </div>
+  

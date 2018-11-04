@@ -25,10 +25,12 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 const appRoutes: Route[] = [
-  // 1st step Route
-  { path: 'holomaster',  component: QfComponent },
+  // homomaster
+  { path: 'holomaster',  component: HolomasterComponent },
+  // individual holo master coin
+  { path: 'holomaster/:holo',  component: HolomasterComponent },
   // Default
-  { path: '', component: QfComponent }
+  { path: '', component: HolomasterComponent }
 ];
 
 @NgModule({

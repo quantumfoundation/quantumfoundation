@@ -93,6 +93,11 @@ End of comment */
     width: 100%;
     height: 100%
   }
+  .photon-shader.obverse {
+    background-color: rgba(0, 0, 0, 0.1); 
+    line-height: 238px;
+    font-size: 30px;
+  }
   .side {
     left: 50%;
   }
@@ -103,7 +108,7 @@ End of comment */
     transform: rotateX(90deg) translateY(-50%);
   }
   [class*="cylinder"] .bm {
-    transform: rotateX(-90deg) translateY(-50%);
+    transform: rotateX(-90deg) translateY(50%) translateX(100%) rotateZ(180deg);
   }
   [class*="cylinder"] .tp, [class*="cylinder"] .bm, [class*="cylinder"] .tp .photon-shader, [class*="cylinder"] .bm .photon-shader {
     border-radius: 50%;
