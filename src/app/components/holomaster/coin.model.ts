@@ -17,11 +17,11 @@ export class CoinSettings {
     constructor(obvText, obvSettings, revText, revSettings) {
         this.ObverseText = obvText;
         if (obvSettings.theme) this.ObverseSettings = this.hexThemes[obvSettings.theme];
-        if (obvSettings.url) this.ObverseSettings = new SideSettings(obvSettings.url, "", "", false);
+        if (obvSettings.url) this.ObverseSettings = new SideSettings(obvSettings.url, "", "");
         
         this.ReverseText = revText;
         if (revSettings.theme) this.ReverseSettings = this.hexThemes[revSettings.theme];
-        if (revSettings.url) this.ReverseSettings = new SideSettings(revSettings.url, "", "", false);
+        if (revSettings.url) this.ReverseSettings = new SideSettings(revSettings.url, "", "");
     }
 }
 
@@ -30,7 +30,7 @@ export class SideSettings {
     TextColor: string;
     BackgroundColor: string;
 
-    constructor(urlPostfix, textColor, bgColor, isHex) {
+    constructor(urlPostfix, textColor, bgColor, isHex?) {
         this.Url = (isHex)? "https://quantumfunds.files.wordpress.com/2018/11/hex_" + urlPostfix + ".png": urlPostfix;
         this.TextColor = textColor;
         this.BackgroundColor = bgColor;

@@ -1,17 +1,28 @@
+.leftSide, .rightSide {
+    float: left;
+    width: 50%;
+}
+
 app-coin {
     float: left;
-    width: 32.8%;
+    width: 33.3%;
     text-align: center;
     margin-top: -106px;
 }
 
 app-coin:first-child, app-coin:nth-child(6)   {
-    margin-left: 16.5%;
+    margin-left: 16.6%;
 }
 
 .holoMandala {
   width: 732px;
-  margin: 108px auto;
+  background-image: url("https://quantumfunds.files.wordpress.com/2018/11/12star8frame.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 534px;
+  margin: 100px auto;
+  padding: 318px 204px;
+  zoom: .5;
 }
 
 .holoMandalaCaption {

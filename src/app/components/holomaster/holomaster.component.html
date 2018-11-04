@@ -1,9 +1,18 @@
+<div class="leftSide">
+    <div class="holoMandala">
+        <app-coin *ngFor="let coin of coins" [coinObverse]="getHexSide(coin.ObverseSettings, '91%')" [coinReverse]="getHexSide(coin.ReverseSettings)"
+            [subtitle]="'Quantum Foundation Quantum Qtum'" [obverseText]="coin.ObverseText" (click)="selectHex(obverse, $event)"></app-coin>
+    </div>
+    <div class="holoMandalaCaption">
 
-<div class="holoMandala">
-    <app-coin *ngFor="let coin of coins" [coinObverse]="getHexSide(coin.ObverseSettings, '91%')" [coinReverse]="getHexSide(coin.ReverseSettings)" 
-    [subtitle]="'Quantum Foundation Quantum Qtum'" [obverseText]="coin.ObverseText" (click)="selectHex(obverse, $event)"></app-coin>
-  </div>
-  <div class="holoMandalaCaption">
-
-  </div>
-  
+    </div>
+</div>
+<div class="rightSide">
+    <h1>HoloMaster</h1>
+    HoloMedicine<br>
+    HoloArt HoloApplications HoloAlgorithm<br>
+    HoloSmart  HoloSustainability HoloSystems HoloSimulations<br> 
+    HoloTechnology HoloTherapies HoloTunnels Holotomography<br>
+    HoloEducation HoloEmulation<br>
+    HoloResearch
+</div>
