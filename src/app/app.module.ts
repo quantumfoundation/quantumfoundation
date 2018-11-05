@@ -17,6 +17,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { FlagsComponent } from './components/flags/flags.component';
 import { QfComponent } from './components/qf/qf.component';
 import { HolomasterComponent } from './components/holomaster/holomaster.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 // AoT requires an exported function for factories
@@ -46,6 +47,7 @@ const appRoutes: Route[] = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpModule,
     EmbedVideo.forRoot(),
     HttpClientModule,

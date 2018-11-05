@@ -19,9 +19,9 @@ app-coin:first-child, app-coin:nth-child(6)   {
   background-image: url("https://quantumfunds.files.wordpress.com/2018/11/12star8frame.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 534px;
+  height: 536px;
   margin: 100px auto;
-  padding: 318px 204px;
+  padding: 314px 154px;
   zoom: .5;
 }
 

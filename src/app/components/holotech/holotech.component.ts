@@ -38,8 +38,6 @@ export class HolotechComponent implements OnInit {
   }
 
   selectHex(obverse, event: MouseEvent) {
-    console.log(obverse);
-    console.log('event', event.target);
   }
 
 }

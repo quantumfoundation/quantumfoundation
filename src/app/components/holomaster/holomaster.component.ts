@@ -18,9 +18,24 @@ export class HolomasterComponent implements OnInit {
     new CoinSettings(["Smart", "Sustainability", "Systems", "Simulations"], { theme: "olive" }, [], { url: this.getFctcoinUrl("2") }),
   ]
 
+  mods:Array<Object> = [
+    {name: "Big H", id:"bigh", postfix:"h"},
+    {name: "Small Hs", id:"smallhs", postfix:"7hs"}
+  ]
+  selectedMod = this.mods[0];
+
+  starBgUrl: string;
+  starIndex: number;
+
   constructor() { }
 
   ngOnInit() {
+    setInterval(x => this.iterateStarBg(), 810);
+  }
+
+  iterateStarBg() {
+    this.starIndex = (this.starIndex == 1)? 2: 1;
+    this.starBgUrl = `https://quantumfunds.files.wordpress.com/2018/11/12star_${this.selectedMod.postfix}_${this.starIndex}.png`;
   }
 
   getFctcoinUrl(value) {
@@ -28,7 +43,6 @@ export class HolomasterComponent implements OnInit {
   }
 
   getHexSide(settings: SideSettings, size) {
-    console.log(settings)
     return {
       'background-image': 'url(' + settings.Url + ')',
       'background-color': settings.BackgroundColor,

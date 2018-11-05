@@ -1,5 +1,8 @@
 <div class="leftSide">
-    <div class="holoMandala">
+  <select [(ngModel)]="selectedMod">
+      <option *ngFor="let mod of mods" [ngValue]="mod">{{mod.name}}</option>
+  </select>
+    <div class="holoMandala" [ngStyle]="{'background-image': 'url(' + starBgUrl + ')'}">
         <app-coin *ngFor="let coin of coins" [coinObverse]="getHexSide(coin.ObverseSettings, '91%')" [coinReverse]="getHexSide(coin.ReverseSettings)"
             [subtitle]="'Quantum Foundation Quantum Qtum'" [obverseText]="coin.ObverseText" (click)="selectHex(obverse, $event)"></app-coin>
     </div>
