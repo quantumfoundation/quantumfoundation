@@ -1,29 +1,29 @@
+<video id="quantumneurofeedback" controls="" autoplay="" loop name="media" width="100%">
+  <source src="http://localhost:4200/assets/images/quantumneurofeedback.mp4" type="video/mp4">
+</video>
 <div class="leftSide">
   <select [(ngModel)]="selectedMod">
-      <option *ngFor="let mod of mods" [ngValue]="mod">{{mod.name}}</option>
+    <option *ngFor="let mod of mods" [ngValue]="mod">{{mod.name}}</option>
   </select>
-    <div class="holoMandala" [ngStyle]="{'background-image': 'url(' + starBgUrl + ')'}">
-        <app-coin *ngFor="let coin of coins" [coinObverse]="getHexSide(coin.ObverseSettings, '91%')" [coinReverse]="getHexSide(coin.ReverseSettings)"
-            [subtitle]="'Quantum Foundation Quantum Qtum'" [obverseText]="coin.ObverseText" (click)="selectHex(obverse, $event)"></app-coin>
-    </div>
-    <div class="holoMandalaCaption">
+  <div class="holoMandala" [ngStyle]="{'background-image': 'url(' + starBgUrl + ')'}">
+    <app-coin *ngFor="let coin of coins" [coinObverse]="getHexSide(coin.ObverseSettings, '91%')" [coinReverse]="getHexSide(coin.ReverseSettings)"
+      [subtitle]="'Quantum Foundation Quantum Qtum'" [obverseText]="coin.ObverseText" (click)="selectHex(obverse, $event)"></app-coin>
+  </div>
+  <div class="holoMandalaCaption">
 
-    </div>
-    <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/386ff9ae54ed45c9b191c3b417178ec7/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+  <div class="sketchfab-embed-wrapper">
+    <iframe width="640" height="480" src="https://sketchfab.com/models/386ff9ae54ed45c9b191c3b417178ec7/embed" frameborder="0"
+      allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-      <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-          <a href="https://sketchfab.com/models/386ff9ae54ed45c9b191c3b417178ec7?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Hyperhoneycomb Holopedia</a>
-          by <a href="https://sketchfab.com/holopedia?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">holopedia</a>
-          on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-      </p>
-      </div>
+  </div>
 </div>
 <div class="rightSide">
-    <h1>HoloMaster</h1>
-    HoloMedicine<br>
-    HoloArt HoloApplications HoloAlgorithm<br>
-    HoloSmart  HoloSustainability HoloSystems HoloSimulations<br> 
-    HoloTechnology HoloTherapies HoloTunnels Holotomography<br>
-    HoloEducation HoloEmulation<br>
-    HoloResearch
+  <h1>HoloMaster</h1>
+  HoloMedicine
+  <br> HoloArt HoloApplications HoloAlgorithm
+  <br> HoloSmart HoloSustainability HoloSystems HoloSimulations
+  <br> HoloTechnology HoloTherapies HoloTunnels Holotomography
+  <br> HoloEducation HoloEmulation
+  <br> HoloResearch
 </div>

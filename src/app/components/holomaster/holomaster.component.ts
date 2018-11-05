@@ -30,6 +30,8 @@ export class HolomasterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    let vid = <HTMLMediaElement>document.getElementById("quantumneurofeedback");
+    vid.volume = 0.1;
     setInterval(x => this.iterateStarBg(), 810);
   }
 
