@@ -2,9 +2,9 @@
   <source src="assets/images/quantumneurofeedback.mp4" type="video/mp4">
 </video>
 <div class="leftSide">
-  <select [(ngModel)]="selectedMod">
-    <option *ngFor="let mod of mods" [ngValue]="mod">{{mod.name}}</option>
-  </select>
+  <div class="starMenu">
+    <div *ngFor="let item of menuItems" class="starMenuItem" [routerLink]="'/holomaster/'+item.name" [ngStyle]="item.style">{{item.name}}</div>
+  </div>
   <div class="holoMandala" [ngStyle]="{'background-image': 'url(' + starBgUrl + ')'}">
     <app-coin *ngFor="let coin of coins" [coinObverse]="getHexSide(coin.ObverseSettings, '91%')" [coinReverse]="getHexSide(coin.ReverseSettings)"
       [subtitle]="'Quantum Foundation Quantum Qtum'" [obverseText]="coin.ObverseText" (click)="selectHex(obverse, $event)"></app-coin>
@@ -19,11 +19,6 @@
   </div>
 </div>
 <div class="rightSide">
-  <h1>HoloMaster</h1>
-  HoloMedicine
-  <br> HoloArt HoloApplications HoloAlgorithm
-  <br> HoloSmart HoloSustainability HoloSystems HoloSimulations
-  <br> HoloTechnology HoloTherapies HoloTunnels Holotomography
-  <br> HoloEducation HoloEmulation
-  <br> HoloResearch
+  <h1>{{title}}</h1>
+  <div [innerHTML]="description"></div>
 </div>
