@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CoinSettings, SideSettings } from './coin.model';
+import { Mod } from '../models/design.model';
 
 @Component({
   selector: 'app-holomaster',
@@ -18,9 +19,8 @@ export class HolomasterComponent implements OnInit {
     new CoinSettings(["Smart", "Sustainability", "Systems", "Simulations"], { theme: "olive" }, [], { url: this.getFctcoinUrl("2") }),
   ]
 
-  mods:Array<Object> = [
-    {name: "Big H", id:"bigh", postfix:"h"},
-    {name: "Small Hs", id:"smallhs", postfix:"7hs"}
+  mods:Array<Mod> = [
+    {name: "Big H", id:"bigh", postfix:"h"}
   ]
   selectedMod = this.mods[0];
 
