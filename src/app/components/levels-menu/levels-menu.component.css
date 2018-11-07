@@ -1,6 +1,5 @@
 .sevenlevels {
-  background-image: url("assets/images/sevenlevels.png");
-  /* background-size: 100%; */
+  background-image: url("/assets/images/sevenlevels.png");
   background-repeat: no-repeat;
   height: 700px;
   padding-top: 56px;
