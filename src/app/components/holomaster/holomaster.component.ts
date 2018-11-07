@@ -35,7 +35,7 @@ export class HolomasterComponent implements OnInit {
   selectedMod = this.mods[0];
 
   starMenuItems = [
-    {name: "HolopediaLi", style: { top: "20px", left: "50%", transform: "translateX(-50%)"}},
+    {name: "Put in Your Hologram for Holopedia Li", style: { top: "20px", left: "50%", transform: "translateX(-50%)"}},
     {name: "Medicine", style: { top: "64px", left: "calc(50% - 97px)", transform: "translateX(-100%)"}},
     {name: "Art", style: { top: "123px", left: "calc(50% - 190px)", transform: "translateX(-100%)"}},
     {name: "Applications", style: { top: "216px", left: "calc(50% - 246px)", transform: "translateX(-100%)"}},
