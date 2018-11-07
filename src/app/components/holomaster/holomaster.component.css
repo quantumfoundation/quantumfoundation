@@ -1,6 +1,12 @@
-.leftSide, .rightSide {
+.leftSide {
     float: left;
-    width: 50%;
+    width: 80%;
+}
+
+.rightSide {
+  float: left;
+  width: 20%;
+
 }
 
 app-coin {

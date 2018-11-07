@@ -22,7 +22,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SocialComponent } from './components/social/social.component';
 import { LevelsMenuComponent } from './components/levels-menu/levels-menu.component';
-
+import { FacebookModule } from 'ngx-facebook';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -70,7 +70,8 @@ const appRoutes: Route[] = [
           useFactory: HttpLoaderFactory,
           deps: [HttpClient]
       }
-  })
+    }),
+    FacebookModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

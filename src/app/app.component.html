@@ -1,4 +1,11 @@
 <video id="quantumneurofeedback" controls="" autoplay="" loop name="media" width="100%">
   <source src="assets/images/quantumneurofeedbackdoctor.mp4" type="video/mp4">
 </video>
-<router-outlet></router-outlet>
+<div class="page">
+  <div class="navigation">
+    <app-levels-menu></app-levels-menu> 
+  </div>
+  <div class="content">
+      <router-outlet></router-outlet>
+  </div>
+</div>

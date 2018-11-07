@@ -2,21 +2,23 @@ h2 {
   font-size: 48px;
 }
 
-.leftPanel {
-    float:left;
-    width: 50%;
+.page {
+  float:left;
+  width: 100%;
+}
+
+.navigation {
+  float:left;
+  width: 30%;
 }
 
 .leftPanel img {
   width: 100%;
 }
 
-.rightPanel {
-    float:right;
-    width: 48%;
-    font-size: 24px;
-    text-align: justify;
-    padding: 1%;
+.content {
+  float:right;
+  width: 70%;
 }
 
 .abstact_title {
