@@ -1,9 +1,7 @@
-<video id="quantumneurofeedback" controls="" autoplay="" loop name="media" width="100%">
-  <source src="assets/images/quantumneurofeedbackdoctor.mp4" type="video/mp4">
-</video>
+
 <div class="leftSide">
   <div class="starMenu">
-    <div *ngFor="let item of menuItems" class="starMenuItem" [routerLink]="'/holomaster/'+item.name" [ngStyle]="item.style">{{item.name}}</div>
+    <div *ngFor="let item of starMenuItems" class="starMenuItem" [routerLink]="'/holomaster/'+item.name" [ngStyle]="item.style">{{item.name}}</div>
   </div>
   <div class="holoMandala" [ngStyle]="{'background-image': 'url(' + starBgUrl + ')'}">
     <app-coin *ngFor="let coin of coins" [coinObverse]="getHexSide(coin.ObverseSettings, '91%')" [coinReverse]="getHexSide(coin.ReverseSettings)"
@@ -20,5 +18,9 @@
 </div>
 <div class="rightSide">
   <h1>{{title}}</h1>
-  <div [innerHTML]="description"></div>
+  <div *ngIf="currentStep == 'HolopediaLi'" class="holopediali">
+      <app-levels-menu></app-levels-menu>
+  </div>
+
+  <!-- <div [innerHTML]="description"></div> -->
 </div>

@@ -18,6 +18,10 @@ import { FlagsComponent } from './components/flags/flags.component';
 import { QfComponent } from './components/qf/qf.component';
 import { HolomasterComponent } from './components/holomaster/holomaster.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { SocialComponent } from './components/social/social.component';
+import { LevelsMenuComponent } from './components/levels-menu/levels-menu.component';
 
 
 // AoT requires an exported function for factories
@@ -26,6 +30,10 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 const appRoutes: Route[] = [
+  { path: 'home',  component: HomeComponent },
+  { path: 'contact',  component: ContactComponent },
+  { path: 'social',  component: SocialComponent },
+  { path: 'projects',  component: HolomasterComponent },
   // homomaster
   { path: 'holomaster',  component: HolomasterComponent },
   // individual holo master coin
@@ -43,7 +51,11 @@ const appRoutes: Route[] = [
     HolotechComponent,
     FlagsComponent,
     QfComponent,
-    HolomasterComponent
+    HolomasterComponent,
+    HomeComponent,
+    ContactComponent,
+    SocialComponent,
+    LevelsMenuComponent
   ],
   imports: [
     BrowserModule,

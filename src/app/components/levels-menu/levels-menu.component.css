@@ -1,0 +1,15 @@
+.sevenlevels {
+  background-image: url("assets/images/sevenlevels.png");
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  height: 700px;
+  padding-top: 56px;
+  text-align: center;
+  width: 406px;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.sevenlevels .menuitem {
+  cursor: pointer;
+}
