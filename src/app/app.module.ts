@@ -23,6 +23,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { SocialComponent } from './components/social/social.component';
 import { LevelsMenuComponent } from './components/levels-menu/levels-menu.component';
 import { FacebookModule } from 'ngx-facebook';
+import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -72,6 +73,7 @@ const appRoutes: Route[] = [
       }
     }),
     FacebookModule.forRoot(),
+    NgxTwitterTimelineModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
